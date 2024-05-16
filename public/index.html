@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth 2.0</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/png" href="/src/oauth.png">
+    <!-- Подключаем вашу библиотеку VKID из node_modules -->
+    <script src="https://unpkg.com/@vkid/sdk@latest/dist-sdk/umd/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OAuth 2.0</h1>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="external-services">
+                <h2>Выберите сервис для входа:</h2>
+                <div class="service-container">
+                    <!-- Кнопки для других сервисов -->
+                    <a href="#" class="service-icon vk"></a>
+                    <a href="#" class="service-icon yandex"></a>
+                    <a href="#" class="service-icon github"></a>
+                    <a href="#" class="service-icon mail"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Московский технический университет связи и информатики</p>
+        </div>
+    </footer>
+    <!-- Подключаем ваш скрипт onetap.js для инициализации VKID и создания кнопки One Tap -->
+    <script type="module" src="onetap.js"></script>
+
+</body>
+</html>

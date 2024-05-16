@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #222;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+header h1,
+footer p {
+  margin: 0;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.external-services {
+  margin-top: 20px;
+}
+
+.service-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.service-icon:hover {
+  filter: brightness(0.6);
+}
+
+.service-icon.vk {
+  background-image: url("/src/vk.png");
+}
+
+.service-icon.yandex {
+  background-image: url("/src/yandex.png");
+}
+
+.service-icon.github {
+  background-image: url("/src/github.png");
+}
+
+.service-icon.mail {
+  background-image: url("/src/mail.png");
+}
+
+.popup {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  width: 25%;
+  position: center;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
